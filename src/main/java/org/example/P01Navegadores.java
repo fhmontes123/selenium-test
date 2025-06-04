@@ -15,7 +15,12 @@ public class P01Navegadores {
         driver.get("https://www.google.com/");
 
         // Localicar el campo de texto para busca
-        WebElement inputBuscar = driver.findElement(By.name("q")); // Localizar por NANE
+        // WebElement inputBuscar = driver.findElement(By.name("q"));                                    // Localizar por NANE
+        // WebElement inputBuscar = driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));                 // Localizar por XPATH
+        // WebElement inputBuscar = driver.findElement(By.cssSelector("#APjFqb"));                       // Localizar por CSS SELECTOR
+        // WebElement inputBuscar = driver.findElement(By.id("APjFqb"));                                 // Localizar por ID
+        WebElement inputBuscar = driver.findElement(By.className("gLFyf"));                              // Localizar por CLASE
+
         // Escribir un texto a buscar
         inputBuscar.sendKeys("Bolivia");
         // Iniciar busqueda presionando ENTER
