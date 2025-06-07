@@ -18,8 +18,17 @@ public class S09VentanasEmergentes {
         driver.manage().window().maximize();
 
         // Hacer clic sobre el boton
-        WebElement btnAlert = driver.findElement(By.xpath("//*[@id=\"alertButton\"]"));
+        // WebElement btnAlert = driver.findElement(By.xpath("//*[@id=\"alertButton\"]"));                   // PRIMER BOTON ALERT
+        WebElement btnAlert = driver.findElement(By.xpath("//*[@id=\"timerAlertButton\"]"));   // SEGUNDO BOTON ALERT
         btnAlert.click();
+
+        // Añadir un delay de 6 segundos
+        // Añadir un retraso de 6 segundos
+        try{
+            Thread.sleep(6000);
+        }catch(InterruptedException ex){
+            throw new RuntimeException();
+        }
 
         // Localizar a la ventana de alert
         Alert alert = driver.switchTo().alert();
@@ -27,5 +36,7 @@ public class S09VentanasEmergentes {
 
         // Clic sobre el boton aceptar del alert
         alert.accept();
+
+
     }
 }
