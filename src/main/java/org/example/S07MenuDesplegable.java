@@ -22,7 +22,7 @@ public class S07MenuDesplegable {
         // Crear objeto select para interactuar
         Select seleccionarLenguaje = new Select(menuDesplegable);
         // Seleccionar una opcion
-        seleccionarLenguaje.selectByValue("it");
+        seleccionarLenguaje.selectByValue("es");
         // Verificar la opcion seleccionada
         String seleccionOp = seleccionarLenguaje.getFirstSelectedOption().getText();
         System.out.println("Idioma seleccionado: " + seleccionOp);
