@@ -36,7 +36,5 @@ public class S09VentanasEmergentes {
 
         // Clic sobre el boton aceptar del alert
         alert.accept();
-
-
     }
 }
