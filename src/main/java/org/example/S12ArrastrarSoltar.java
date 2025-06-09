@@ -26,6 +26,5 @@ public class S12ArrastrarSoltar {
         // 5. Realizar la accion de arrastrar y soltar
         Actions actions = new Actions(driver);
         actions.dragAndDrop(img, div).perform(); // (ElementoAArrastrar, ElementoDondeSoltar)
-
     }
 }
