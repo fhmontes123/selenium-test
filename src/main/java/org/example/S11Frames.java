@@ -15,12 +15,13 @@ public class S11Frames {
         // 2. Abrir el navegador en una ruta
         driver.get("https://www.w3schools.com/TAGS/tryit.asp?filename=tryhtml_iframe");
 
-        // 2. Cambiar de frame
+        // 3. Cambiar de frame
         driver.switchTo().frame("iframeResult");
         driver.switchTo().frame(driver.findElement(By.xpath("/html/body/iframe")));
-        // 3. Obtener la referencia del boton "Login" del iframe
-        WebElement iframeElement = driver.findElement(By.xpath("//*[@id=\"pagetop\"]/div[3]/a[1]"));
-        // 4. Hacer clic en el boton
+
+        // 4. Obtener la referencia del boton "Login" del iframe
+        WebElement iframeElement = driver.findElement(By.xpath("//*[@id=\"tnb-login-btn\"]/span[1]"));
+        // 5. Hacer clic en el boton
         iframeElement.click();
     }
 }
