@@ -23,7 +23,7 @@ public class ScreenTest {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    private final static String USERNAME = "myuser01";
+    private final static String USERNAME = "myuser110";
     private final static String PASSWORD = "Password*123";
 
     @BeforeClass
@@ -129,7 +129,7 @@ public class ScreenTest {
         WebElement newPassword = driver.findElement(By.id("newPassword"));
         newPassword.sendKeys("NewPassword*123");
         WebElement newPasswordConfirmation = driver.findElement(By.id("newPasswordConfirmation"));
-        newPasswordConfirmation.sendKeys("PasswordNew*123");
+        newPasswordConfirmation.sendKeys("NewPassword*123");
 
         // CAPTURA DE PANTALLA CUANDO LOS PASSWORDS NO SON IGUALES
         // VERIFICAMOS QUE EXISTA EL MENSAJE "Passwords do not match"
